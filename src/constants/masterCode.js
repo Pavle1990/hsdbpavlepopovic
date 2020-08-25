@@ -1,0 +1,1 @@
+export const masterCode=4815162342

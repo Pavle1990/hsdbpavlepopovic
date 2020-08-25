@@ -1,0 +1,124 @@
+$background:#434343;
+$body:#7d7d7f;
+$button:#63636e;
+$button_text:#f3f3f3;
+$screen_text:#434343;
+$backlight_off:#47b2b2;
+$backlight_on:#7fffff;
+
+$breakpoint:768px;
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('./fonts/RobotoMono-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'RobotoNormal';
+  src: url('./fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin backgorund{
+  background-color: $backlight_off;
+  #{if(&,'&.active','')} {
+  background-color: $backlight_on;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0
+}
+
+#root {
+  height: 100%;
+  background-color: $background;
+  @include center;
+}
+.boxbody {
+  background-color: $body;
+  width:95vw;
+  height: 95vh;
+  @include center;
+  flex-direction: column;
+  border:2px solid black;
+  border-radius: 8px;
+  &__code{
+    display: flex;
+    width: 90%;
+    flex:0.05;
+    justify-content:flex-end;
+    align-items: flex-end;
+    font-family: 'RobotoNormal';
+    font-size: 0.7em;
+  }
+}
+.screen {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex:0.25;
+  width:240px;
+  padding: 20px;
+  @include backgorund;
+  border-radius: 5px;
+  color: $screen_text;
+  &__upperText {
+    display: flex;
+    flex:0.5;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'RobotoNormal';
+    font-size: 1em;
+  }
+  &__lowerText {
+    display: flex;
+    flex:0.5;
+    justify-content: flex-end;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    align-items: flex-end;
+    font-family: 'RobotoMedium';
+    font-size: 25px;
+  }  
+}
+.container {
+  flex:0.6;
+  @include center;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3,80px);
+  grid-template-rows: repeat(4,80px);
+
+ &__button {
+   border: none;
+   outline: none;
+   margin:10px;
+   width: 60px;
+   height: 60px;
+   background-color: $button;
+   color: $button_text;
+   font-family: 'RobotoNormal';
+   font-size: 3em;
+   border-radius: 5px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+}
+
+@media (min-width: $breakpoint) {
+ .boxbody{
+  width:300px;
+  height:600px;
+ }
+}
