@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hsdbpavlepopovic/static/css/main.bd271b57.chunk.css",
+    "main.js": "/hsdbpavlepopovic/static/js/main.7a52c75f.chunk.js",
+    "main.js.map": "/hsdbpavlepopovic/static/js/main.7a52c75f.chunk.js.map",
+    "runtime-main.js": "/hsdbpavlepopovic/static/js/runtime-main.a1d206fe.js",
+    "runtime-main.js.map": "/hsdbpavlepopovic/static/js/runtime-main.a1d206fe.js.map",
+    "static/js/2.13bf40b6.chunk.js": "/hsdbpavlepopovic/static/js/2.13bf40b6.chunk.js",
+    "static/js/2.13bf40b6.chunk.js.map": "/hsdbpavlepopovic/static/js/2.13bf40b6.chunk.js.map",
+    "index.html": "/hsdbpavlepopovic/index.html",
+    "precache-manifest.e5e2ab0979c4644106083a71980e8bec.js": "/hsdbpavlepopovic/precache-manifest.e5e2ab0979c4644106083a71980e8bec.js",
+    "service-worker.js": "/hsdbpavlepopovic/service-worker.js",
+    "static/css/main.bd271b57.chunk.css.map": "/hsdbpavlepopovic/static/css/main.bd271b57.chunk.css.map",
+    "static/js/2.13bf40b6.chunk.js.LICENSE.txt": "/hsdbpavlepopovic/static/js/2.13bf40b6.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/hsdbpavlepopovic/static/media/RobotoMono-Regular.e5ca8c0a.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1d206fe.js",
+    "static/js/2.13bf40b6.chunk.js",
+    "static/css/main.bd271b57.chunk.css",
+    "static/js/main.7a52c75f.chunk.js"
+  ]
+}
